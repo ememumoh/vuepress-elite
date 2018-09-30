@@ -2,7 +2,7 @@
 /node_modules
 
 # production
-/docs/.vuepress/dist
+.vuepress/dist
 
 # misc
 .DS_Store

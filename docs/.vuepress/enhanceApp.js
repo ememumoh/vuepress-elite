@@ -8,7 +8,7 @@ export default ({
 		var auth = localStorage.getItem('p');
 		if (auth) {
   			console.log("all is good");
-  			next();
+  			next('/error');  // try to redirect to a page, to see if that works
 		} else {
   			console.log("redirect to login");
 			window.location.href = '/login.html';
