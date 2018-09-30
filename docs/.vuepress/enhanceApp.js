@@ -7,10 +7,10 @@ export default ({
 	router.beforeEach((to, from, next) => {
 		var auth = localStorage.getItem('p');
 		if (auth) {
-  			// console.log("all is good");
+  			console.log("all is good");
   			next();
 		} else {
-  			// console.log("redirect to login");
+  			console.log("redirect to login");
 			window.location.href = '/login.html';
 		}
 	})
