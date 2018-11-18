@@ -7,8 +7,7 @@ export default ({
 	router.beforeEach((to, from, next) => {
 		var auth = localStorage.getItem('p');
 		if (auth) {
-  			console.log("all is good");
-  			next('/error');  // try to redirect to a page, to see if that works
+  			console.log("all is good");	
 		} else {
   			console.log("redirect to login");
 			window.location.href = '/login.html';
